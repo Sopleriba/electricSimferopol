@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Электрик Симферополь</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Commissioner:wght@100..900&family=Noto+Sans+JP:wght@100..900&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+
+
+
+    <nav>
+        <div id="nav_div1">
+            Андрей
+        </div>
+        <div id="nav_div2">
+
+        </div>
+        <div class="nav_numb">
+            <img src="telephone-fill.svg" alt="">
+            <a href="" onclick="copyPhoneNumber('89787739510')">+7 (978) 773-95-10</a>
+
+        </div>
+
+
+    </nav>
+    <div class="part_2">
+        <div class="part_2_1">
+            <div class="part_2_1_1">
+                Самозанятый.
+            </div>
+            <div class="part_2_1_2">
+                Предоставляю отчётные документы.
+            </div>
+            <div class="part_2_1_3">
+                Соответствующее образование. Диплом.
+            </div>
+            
+        </div>
+        <div class="part_2_2">
+            <div id="part_2_2_cont_1">
+                <div class="part_2_2_1">
+                    Электромонтажные работы
+                </div>
+                <div class="part_2_2_2">
+                    Индивидуальные проекты
+                </div>
+            </div>
+            <div id="part_2_2_cont_2">
+                <div class="part_2_2_3">
+                    Приемлемые цены
+                </div>
+                <div class="part_2_2_4">
+                    Обязательная гарантия от 1 до 10 лет!
+                </div>
+            </div>
+           <div id="cont3_part_2_2">
+                <div class="part_2_2_5">
+                    Работы с нуля и под ключ
+                </div>
+           </div>
+            
+        </div>
+        <div class="part_2_3">
+            Работаю <br> <br>
+            по всему <br> <br>
+            <span>Крыму</span>
+        </div>
+
+    </div>
+    <div id="part_2">
+        <div class="part_2_1" id="part_2_1">
+            <div class="part_2_1_1">
+                Самозанятый.
+            </div>
+            <div class="part_2_1_2">
+                Предоставляю отчётные документы.
+            </div>
+            <div class="part_2_1_3">
+                Соответствующее образование. Диплом.
+            </div>
+            
+        </div>
+        <div class="part_2_3" id="part_2_3">
+            Работаю <br> <br>
+            по всему <br> <br>
+            <span>Крыму</span>
+        </div>
+    </div>
+    <br><br><br>
+    <div class="part_3" id="part_3">
+        <div class="image-container">
+            <img src="1_1_examle.jpg" class="zoomable-image" alt="Пример работы">
+            <img src="2_1_examle.jpg" class="zoomable-image" alt="Пример работы">
+            <img src="3_1_examle.jpg" class="zoomable-image" alt="Пример работы">
+        </div>
+        <div class="image-container">
+            <img src="1_2_examle.jpg" class="zoomable-image" alt="Пример работы">
+            <img src="2_2_examle.jpg" class="zoomable-image" alt="Пример работы">
+            <img src="3_2_examle.jpg" class="zoomable-image" alt="Пример работы">
+        </div>
+        <div class="image-container">
+            <img src="1_3_examle.jpg" class="zoomable-image" alt="Пример работы">
+            <img src="2_3_examle.jpg" class="zoomable-image" alt="Пример работы">
+            <img src="3_3_examle.jpg" class="zoomable-image" alt="Пример работы">
+        </div>
+    </div>
+
+
+
+    <script>
+        const zoomableImages = document.querySelectorAll('.zoomable-image');
+        let currentlyZoomedImage = null;
+
+        zoomableImages.forEach(image => {
+            image.addEventListener('click', () => {
+                if (currentlyZoomedImage && currentlyZoomedImage !== image) {
+                    currentlyZoomedImage.classList.remove('zoomed');
+                }
+
+                image.classList.toggle('zoomed');
+                currentlyZoomedImage = image.classList.contains('zoomed') ? image : null;
+            });
+        });
+        function copyPhoneNumber(phoneNumber) {
+          navigator.clipboard.writeText(phoneNumber)
+            .then(() => {
+              alert('Номер телефона скопирован');
+            })
+            .catch(err => {
+
+              alert('Не удалось скопировать номер телефона. Пожалуйста, скопируйте его вручную.');
+            });
+            
+        }
+    </script>
+</body>
+
+</html>
