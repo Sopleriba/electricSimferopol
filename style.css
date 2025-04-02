@@ -5,6 +5,9 @@
     padding: 0;
     margin: 0;
 }
+body{
+    padding-bottom: 30px;
+}
 @media screen and (max-width: 1250px) {
     .part_2_3, .part_2_1{
         display: none !important;
