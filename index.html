@@ -130,9 +130,6 @@
         });
         function copyPhoneNumber(phoneNumber) {
           navigator.clipboard.writeText(phoneNumber)
-            .then(() => {
-              alert('Номер телефона скопирован');
-            })
             .catch(err => {
 
               alert('Не удалось скопировать номер телефона. Пожалуйста, скопируйте его вручную.');
