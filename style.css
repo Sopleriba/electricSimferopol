@@ -6,7 +6,7 @@
     margin: 0;
 }
 body{
-    padding-bottom: 30px;
+    padding-bottom: 10vh;
 }
 @media screen and (max-width: 1250px) {
     .part_2_3, .part_2_1{
@@ -154,6 +154,7 @@ body{
     #part_3 img{
         height: 12vh ;
     } 
+    
 }
 nav{
     margin-bottom: 10vh;
